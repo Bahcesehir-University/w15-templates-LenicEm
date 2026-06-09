@@ -142,7 +142,7 @@ public:
         // replace
         if(index<0||index>=N){
             throw std::out_of_range("Box index out of range");}
-        T data_[index];
+        data_[index] = value;
         
         
     }
