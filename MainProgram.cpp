@@ -130,7 +130,7 @@ public:
     // TODO 6a: default-construct all N elements to T()
     FixedArray() {
         // replace
-        T data_[N];
+        for(int i=0; i<N;++i)data_[i] =T();
         
     }
 
