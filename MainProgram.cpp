@@ -49,8 +49,8 @@ public:
     // TODO 3a: constructor that initializes first_ and second_
     Pair(A first, B second) {
         // replace with member initialization
-        A first_= first;
-        B second_ = second;
+        first_= first;
+        second_ = second;
     }
 
     // TODO 3b: getters (const)
