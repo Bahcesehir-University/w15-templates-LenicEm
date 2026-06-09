@@ -99,8 +99,8 @@ public:
         T sum =T();
         for(const T& value : items_){
         sum+=value;
-        return sum; // <-- replace
-    }
+         // <-- replace
+    }return sum;
     }
 };
 
