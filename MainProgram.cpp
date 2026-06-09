@@ -58,8 +58,8 @@ public:
     B getSecond() const { return B(second_); }   // <-- replace
 
     // TODO 3c: setters
-    void setFirst(A value)  {A first_ = value; }           // <-- replace
-    void setSecond(B value) {B second_ = value; }           // <-- replace
+    void setFirst(A value)  { first_ = value; }           // <-- replace
+    void setSecond(B value) { second_ = value; }           // <-- replace
 
     // TODO 3d: swapValues - swap first_ and second_ (assume A == B when called)
     void swapValues() {
@@ -87,7 +87,7 @@ public:
 
     // TODO 4c: return the item at index; throw std::out_of_range if invalid
     T get(int index) const {
-        if(size()<=index||index<0){
+        if(items_.size()<=index||index<0){
             throw std::out_of_range("Box index out of range");
         }
         return items_[index]; // <-- replace
