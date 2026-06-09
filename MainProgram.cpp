@@ -140,16 +140,16 @@ public:
     // TODO 6c: set data_[index]; throw std::out_of_range if invalid
     void set(int index, const T& value) {
         // replace
-        if(index<0){
+        if(index<0||index>=N){
             throw std::out_of_range("Box index out of range");}
-            T data_[index];
+        T data_[index];
         
         
     }
 
     // TODO 6d: return data_[index]; throw std::out_of_range if invalid
     T at(int index) const {
-        if(data_.size<=index||index<0){
+        if(N<=index||index<0){
             throw std::out_of_range("Box index out of range");
         }
         return data_[index]; // <-- replace
